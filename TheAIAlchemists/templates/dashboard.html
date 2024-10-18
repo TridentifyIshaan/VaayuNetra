@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Integration Dashboard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .parameter-group {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .parameter {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .parameter:last-child {
+            margin-right: 0;
+        }
+        .parameter label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .parameter input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .output {
+            margin-top: 20px;
+            width: 100%;
+        }
+        .output div {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 1200px) {
+            .parameter-group {
+                flex-direction: column;
+            }
+            .parameter {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .parameter:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        /* Animation Background */
+        section {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#000000, #00CCDD, #000);
+            animation: animate 5s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        section span {
+            position: relative;
+            display: block;
+            width: calc(6.25vw - 2px);
+            height: calc(6.25vw - 2px);
+            background: #181818;
+            z-index: 1;
+            transition: 1.5s;
+            top: -300px;
+        }
+
+        /* Hover Effect for each square block */
+        section span:nth-child(1):hover {
+            background: #6439FF; /* Red */
+            transition: 1s;
+        }
+
+        section span:nth-child(2):hover {
+            background: #4F75FF; /* Green */
+            transition: 1s;
+        }
+
+        section span:nth-child(3):hover {
+            background: #00CCDD; /* Blue */
+            transition: 1s;
+        }
+
+        section span:nth-child(4):hover {
+            background: #7CF5FF; /* Yellow */
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Model Integration Dashboard</h1>
+        <form id="modelForm">
+            <div class="parameter-group">
+                <div class="parameter">
+                    <label for="param1">CPU Usage:</label>
+                    <input type="number" id="param1" name="param1" step="0.0000001" required>
+                </div>
+                <div class="parameter">
+                    <label for="param2">Memory Usage:</label>
+                    <input type="number" id="param2" name="param2" step="0.0000001" required>
+                </div>
+                <div class="parameter">
+                    <label for="param3">Energy Effeciency:</label>
+                    <input type="number" id="param3" name="param3" step="0.0000001" required>
+                </div>
+                <div class="parameter">
+                    <label for="param4">Network Traffic:</label>
+                    <input type="number" id="param4" name="param4" step="0.0000001" required>
+                </div>
+                <div class="parameter">
+                    <label for="param5">Power Consumption:</label>
+                    <input type="number" id="param5" name="param5" step="0.0000001" required>
+                </div>
+                <div class="parameter">
+                    <label for="param6">Execution Time:</label>
+                    <input type="number" id="param6" name="param6" step="0.0000001" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div class="output" id="output">
+            <h2>Output Parameters</h2>
+            <div id="output1">CPU Usage: <span></span></div>
+            <div id="output2">Memory Usage: <span></span></div>
+            <div id="output3">Energy Efficiency: <span></span></div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('modelForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Here you would typically send the input values to your model and get the output
+            // For demonstration, we'll just set some dummy output values
+            document.querySelector('#output1 span').textContent = '0.1234567';
+            document.querySelector('#output2 span').textContent = '0.2345678';
+            document.querySelector('#output3 span').textContent = '0.3456789';
+        });
+    </script>
+</body>
+</html>

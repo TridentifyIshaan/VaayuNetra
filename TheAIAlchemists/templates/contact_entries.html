@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Entries</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .entry {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .entry h3 {
+            margin: 0 0 10px 0;
+        }
+        .entry p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Entries</h1>
+    {% for entry in entries %}
+    <div class="entry">
+        <h3>{{ entry.name }}</h3>
+        <p><strong>Email:</strong> {{ entry.email }}</p>
+        <p><strong>Message:</strong> {{ entry.message }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
