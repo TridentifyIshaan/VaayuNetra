@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Entries</title>
+</head>
+<body>
+    <h2>Contact Form Entries</h2>
+    <ul>
+        {% for entry in entries %}
+        <li><strong>Name:</strong> {{ entry.name }} | <strong>Email:</strong> {{ entry.email }} | <strong>Message:</strong> {{ entry.message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

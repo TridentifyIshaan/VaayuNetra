@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* New font import */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        /* Animation Background */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+        }
+
+        section {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#000000, #00CCDD, #000);
+            animation: animate 5s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        section span {
+            position: relative;
+            display: block;
+            width: calc(6.25vw - 2px);
+            height: calc(6.25vw - 2px);
+            background: #181818;
+            z-index: 2;
+            transition: 1.5s;
+            top: -300px;
+        }
+
+        /* Hover Effect for each square block*/
+        section span:nth-child(1):hover {
+            background: #6439FF ; /* Red */
+            transition: 1s;
+        }
+
+        section span:nth-child(2):hover {
+            background: #4F75FF; /* Green */
+            transition: 1s;
+        }
+
+        section span:nth-child(3):hover {
+            background: #00CCDD; /* Blue */
+            transition: 1s;
+        }
+
+        section span:nth-child(4):hover {
+            background: #7CF5FF ; /* Yellow */
+            transition: 1s;
+        }
+
+        /* Contact Form Styling */
+        .contact-form {
+            position: absolute;
+            z-index: 3;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 50%; /* Default width for larger screens */
+            max-width: 600px; /* Maximum width */
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+            font-family: 'Roboto', sans-serif; /* New font family */
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        /* Hover Effect */
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-form {
+                width: 80%;
+                padding: 15px;
+            }
+
+            .contact-form h2 {
+                font-size: 1.5em;
+            }
+
+            .contact-form input, .contact-form textarea {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .contact-form button {
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-form {
+                width: 90%;
+                padding: 10px;
+            }
+
+            .contact-form h2 {
+                font-size: 1.2em;
+            }
+
+            .contact-form input, .contact-form textarea {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            .contact-form button {
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animated Background Section -->
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/contact_us" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

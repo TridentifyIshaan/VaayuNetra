@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Prediction Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #6e9fe9;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 400px;
+                border-style:groove;
+                border-color: #007bff;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            label {
+                margin-bottom: 5px;
+                color: #555;
+            }
+            input[type="text"] {
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            input[type="submit"] {
+                padding: 10px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Prediction Dashboard</h1>
+            <form method="post" action="/predict">
+                <label for="cpu_usage">CPU Usage</label>
+                <input type="text" name="cpu_usage" id="cpu_usage">
+                
+                <label for="memory_usage">Memory Usage</label>
+                <input type="text" name="memory_usage" id="memory_usage">
+                
+                <label for="energy_efficiency">Energy Efficiency</label>
+                <input type="text" name="energy_efficiency" id="energy_efficiency">
+                
+                <label for="network_traffic">Network Traffic</label>
+                <input type="text" name="network_traffic" id="network_traffic">
+                
+                <label for="power_consumption">Power Consumption</label>
+                <input type="text" name="power_consumption" id="power_consumption">
+                
+                <label for="execution_time">Execution Time</label>
+                <input type="text" name="execution_time" id="execution_time">
+                
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+    </body>
+</html></html>
