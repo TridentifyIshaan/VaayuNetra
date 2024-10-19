@@ -1,8 +1,8 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=10)
 
 ### 💫 About Project:
-🎵 Creating a music streaming platform project. <br>
-💜 Theme Color: Violet <br>
+🎵 Creating a cloud resource auto scheduler. <br>
+💙 Theme Color: Bluish <br>
 
 AI-Based Cloud Resource Auto-Scheduler
 Overview
@@ -26,7 +26,9 @@ Copy code
 ├── README.md                # Project documentation
 ├── requirements.txt         # List of project dependencies
 └── app.py                   # Main application file to run the platform
+
 Technologies Used
+
 Programming Language: Python
 Machine Learning: Time-series forecasting, LSTM, ARIMA
 Cloud Platforms: AWS, Azure, GCP (integrations via API)
@@ -72,12 +74,8 @@ Feel free to contribute by submitting pull requests, raising issues, or suggesti
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
-For any questions or feedback, please contact yourname@example.com.
-
 ![alt text](https://github.com/ChaosXYZ/ChaosXYZ/blob/main/divider.png?raw=true)
 
-### 💻 Tech Stack:
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![MySQL](https://img.shields.io/badge/MySQL-%230074A3.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
