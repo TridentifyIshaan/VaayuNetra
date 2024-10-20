@@ -22,15 +22,15 @@ This solution is designed for seamless integration with popular cloud platforms 
 PHP
 
 Copy code
-├── ai_model/                # AI model for predicting cloud resource demand
-├── cloud_integration/        # Code to interact with cloud provider APIs
-├── data/                    # Historical and real-time user activity data
-├── monitoring/              # Modules for monitoring and feedback
-├── static/                  # Frontend resources for the web platform
-├── templates/               # HTML templates for the user interface
-├── README.md                # Project documentation
-├── requirements.txt         # List of project dependencies
-└── app.py                   # Main application file to run the platform
+├── ai_model/                # AI model for predicting cloud resource demand <br>
+├── cloud_integration/        # Code to interact with cloud provider APIs<br>
+├── data/                    # Historical and real-time user activity data<br>
+├── monitoring/              # Modules for monitoring and feedback<br>
+├── static/                  # Frontend resources for the web platform<br>
+├── templates/               # HTML templates for the user interface<br>
+├── README.md                # Project documentation<br>
+├── requirements.txt         # List of project dependencies<br>
+└── app.py                   # Main application file to run the platform<br>
 
 ### Technologies Used
 
