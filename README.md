@@ -19,7 +19,22 @@ The system is composed of the following key components:
 - **Cloud Resource Manager**: Interfaces with cloud providers to automatically scale resources.
 - **Monitoring Module**: Tracks system performance and provides feedback for improving prediction accuracy.
 
-![Architecture Diagram](path_to_architecture_diagram.png)
+## Project Structure
+```bash
+ai-cloud-auto-scheduler/
+│
+├── app.py
+├── train_model.py
+├── autoscaler.py
+├── config.yaml
+├── requirements.txt
+├── data/
+│   └── historical_data.csv
+├── model/
+│   └── prediction_model.h5
+└── README.md
+ ```
+
 
 ## Prerequisites
 - Python 3.8+
@@ -57,3 +72,16 @@ The system is composed of the following key components:
 2. **Train Model**: Use the provided script to train the AI model on historical data:
    ```bash
    python train_model.py
+3. **Auto-Scaling**: Deploy the auto-scaling service and let it handle resource management based on AI predictions.
+**Configuration**
+- Scaling thresholds: Define thresholds for resource scaling in config.yaml.
+- Cloud Provider API: Update API configurations in the config.yaml file based on your cloud provider.
+**Future Improvements**
+- Support for multi-cloud integration (AWS, GCP, Azure).
+- Enhanced prediction models incorporating additional metrics like network traffic and storage demand.
+- Predictive maintenance to auto-detect resource failures.
+**Contributing**
+Contributions are welcome! Please open an issue or submit a pull request for any bug fixes or new features.
+
+License
+This project is licensed under the MIT License. See the [LICENSE] file for details.
