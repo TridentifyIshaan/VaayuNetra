@@ -103,3 +103,12 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 This project is licensed under the MIT License. See the [LICENSE](path/to/license) file for details.
 
+### 🐈‍⬛ GitHub Profiles of Creators:
+[![GitHub Ishaan Rastogi](https://img.shields.io/badge/IshaanRastogi-%23FFFFFF.svg?logo=GitHub&logoColor=black)](https://github.com/TridentifyIshaan)
+[![GitHub Jai Tiwari](https://img.shields.io/badge/JaiTiwari-%23FFFFFF.svg?logo=GitHub&logoColor=black)](https://github.com/JAI0705)
+[![GitHub Sainava Modak](https://img.shields.io/badge/SainavaModak-%23FFFFFF.svg?logo=GitHub&logoColor=black)](https://github.com/Sainava)
+[![GitHub Srujal Sau](https://img.shields.io/badge/SrujalSau-%23FFFFFF.svg?logo=GitHub&logoColor=black)](https://github.com/22srujal)
+[![GitHub Gourav Garg](https://img.shields.io/badge/GouravGarg-%23FFFFFF.svg?logo=GitHub&logoColor=black)](https://github.com/18gourav)
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
