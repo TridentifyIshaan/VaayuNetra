@@ -1,19 +1,21 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6)
 
 ### 💫 About Project:
-🎵 Creating a cloud resource auto scheduler. <br>
+✏️ Name: AI-Based Cloud Resource Auto-Scheduler <br>
 💙 Theme Color: Bluish <br>
 
-AI-Based Cloud Resource Auto-Scheduler
-Overview
-The AI-Based Cloud Resource Auto-Scheduler is a system that utilizes artificial intelligence to predict cloud resource demand based on historical data and real-time user activity. It automatically scales cloud resources up or down to optimize performance and minimize costs, preventing under-utilization or over-provisioning of resources. This solution is designed for seamless integration with popular cloud platforms like AWS, Azure, and GCP.
+### Overview
+The AI-Based Cloud Resource Auto-Scheduler is a system that utilizes artificial intelligence to predict cloud resource demand based on historical data and real-time user activity. It automatically scales cloud resources up or down to optimize performance and minimize costs, preventing under-utilization or over-provisioning of resources.
+This solution is designed for seamless integration with popular cloud platforms like AWS, Azure, and GCP.
 
-Features
-AI-Based Demand Prediction: Predicts future cloud resource needs using time-series data and user activity patterns.
-Automatic Scaling: Dynamically adjusts cloud resources to match demand, ensuring optimal performance and cost-efficiency.
-Cost Optimization: Reduces cloud costs by preventing resource over-provisioning and eliminating idle time.
-Real-Time Monitoring: Continuously monitors cloud usage and adjusts resources based on live conditions.
-Multi-Cloud Integration: Supports major cloud platforms, with potential to expand to multi-cloud environments.
+### Features
+<ol>
+  <li>AI-Based Demand Prediction: Predicts future cloud resource needs using time-series data and user activity patterns.</li>
+  <li>Automatic Scaling: Dynamically adjusts cloud resources to match demand, ensuring optimal performance and cost-efficiency.</li>
+  <li>Cost Optimization: Reduces cloud costs by preventing resource over-provisioning and eliminating idle time.</li>
+  <li>Real-Time Monitoring: Continuously monitors cloud usage and adjusts resources based on live conditions.</li>
+  <li>Multi-Cloud Integration: Supports major cloud platforms, with potential to expand to multi-cloud environments.</li>
+</ol>
 
 ### Project Structure
 
