@@ -1,3 +1,6 @@
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6)
+
+💙 Theme Color: Bluish <br>
 # AI-Based Cloud Resource Auto-Scheduler
 
 ## Overview
@@ -37,13 +40,26 @@ ai-cloud-auto-scheduler/
 
 
 ## Prerequisites
-- Python 3.8+
+- Python 3.8+ ( For Backend and AI Models )
+- HTML, CSS, Bootstrap, JS ( for Web Interface )
 - Cloud account with AWS, GCP, or Azure (with autoscaling enabled)
 - Libraries:
   - TensorFlow/PyTorch for AI model
-  - Boto3 (for AWS) or equivalent for cloud integration
-  - Flask (for web interface, optional)
   - Pandas, NumPy (for data processing)
+  - Boto3 (for AWS) or equivalent for cloud integration
+  - Flask (for web hosting & backend linkage)
+  - SQLAlchemy ( for backend database storage )
+
+## Overall Tech Stack
+
+![Python 3.8+](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Flask](https://img.shields.io/badge/SQLite-%2300ffd4.svg?style=for-the-badge&logo=flask&logoColor=black)
+![SQAlchemy](https://img.shields.io/badge/SQLalchemy-%238f1402.svg?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%234285F4.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/SQLalchemy-%234c0bce.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScipt](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
   
 ## Installation
 
