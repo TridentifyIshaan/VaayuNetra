@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=10)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6)
 
 ### 💫 About Project:
 🎵 Creating a cloud resource auto scheduler. <br>
