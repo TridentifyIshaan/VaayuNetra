@@ -14,8 +14,11 @@ Automatic Scaling: Dynamically adjusts cloud resources to match demand, ensuring
 Cost Optimization: Reduces cloud costs by preventing resource over-provisioning and eliminating idle time.
 Real-Time Monitoring: Continuously monitors cloud usage and adjusts resources based on live conditions.
 Multi-Cloud Integration: Supports major cloud platforms, with potential to expand to multi-cloud environments.
-Project Structure
-php
+
+### Project Structure
+
+PHP
+
 Copy code
 ├── ai_model/                # AI model for predicting cloud resource demand
 ├── cloud_integration/        # Code to interact with cloud provider APIs
@@ -27,7 +30,7 @@ Copy code
 ├── requirements.txt         # List of project dependencies
 └── app.py                   # Main application file to run the platform
 
-Technologies Used
+### Technologies Used
 
 Programming Language: Python
 Machine Learning: Time-series forecasting, LSTM, ARIMA
@@ -35,7 +38,9 @@ Cloud Platforms: AWS, Azure, GCP (integrations via API)
 Web Framework: Flask/Django (depending on your choice)
 Database: SQLite/MySQL (to store usage data)
 Frontend: HTML, CSS, JavaScript
-Installation
+
+### Installation
+
 Prerequisites
 Python 3.8+
 Cloud provider account (AWS, GCP, or Azure)
@@ -71,7 +76,7 @@ Monitoring: Tracks resource utilization and adjusts predictions dynamically.
 Contributing
 Feel free to contribute by submitting pull requests, raising issues, or suggesting improvements.
 
-License
+### License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ![alt text](https://github.com/ChaosXYZ/ChaosXYZ/blob/main/divider.png?raw=true)
