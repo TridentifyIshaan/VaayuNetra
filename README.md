@@ -76,6 +76,7 @@ ai-cloud-auto-scheduler/
 **Configuration**
 - Scaling thresholds: Define thresholds for resource scaling in config.yaml.
 - Cloud Provider API: Update API configurations in the config.yaml file based on your cloud provider.
+  
 **Future Improvements**
 - Support for multi-cloud integration (AWS, GCP, Azure).
 - Enhanced prediction models incorporating additional metrics like network traffic and storage demand.
