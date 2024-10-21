@@ -101,7 +101,7 @@ ai-cloud-auto-scheduler/
 Contributions are welcome! Please open an issue or submit a pull request for any bug fixes or new features.
 
 ## License
-This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International Public License. See the [LICENSE](path/to/license) file for details.
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International Public License. See the [LICENSE](https://github.com/TridentifyIshaan/VaayuNetra/blob/cca180278d1da7978c79f5a6b1bf966a93410ce9/LICENSE) file for details.
 
 ### 🐈‍⬛ GitHub Profiles of Creators:
 
