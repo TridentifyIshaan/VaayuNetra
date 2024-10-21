@@ -49,7 +49,7 @@ ai-cloud-auto-scheduler/
   - Boto3 (for AWS) or equivalent for cloud integration
   - Flask (for web hosting & backend linkage)
   - SQLAlchemy ( for backend database storage )
-- [Dataset](https://www.kaggle.com/dsv/6165137}) 
+- [Dataset](https://www.kaggle.com/datasets/abdurraziq01/cloud-computing-performance-metrics/data}) 
 ## Overall Tech Stack
 
 ![Python 3.8+](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
