@@ -12,7 +12,7 @@ This project enables businesses to efficiently manage their cloud infrastructure
 - **Demand Prediction**: Predicts cloud resource demand using AI models based on historical and real-time user data.
 - **Auto-Scaling**: Automatically adjusts cloud resources to meet predicted demand.
 - **Cost Optimization**: Minimizes cloud infrastructure costs by preventing unnecessary resource allocation.
-- **Real-Time Monitoring**: Continuously tracks system performance and adjusts scaling in real time.
+- **Real-Time Monitoring**: Continuously tracks system performance and adjusts scaling in real-time.
 - **Cloud Provider Integration**: Supports integration with major cloud platforms like AWS, Google Cloud, and Microsoft Azure.
 
 ## Architecture
